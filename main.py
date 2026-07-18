@@ -2,7 +2,6 @@ import speech_recognition as sr
 import webbrowser
 import pyttsx3
 import musicLibrary
-import os 
 import wikipedia 
 import requests 
 import Ai
@@ -31,7 +30,7 @@ def get_news():
 
 
 def speak(text):
-    global engine
+    global engine 
     engine.stop()
     engine.say(text)
     engine.runAndWait()
